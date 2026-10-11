@@ -21,5 +21,5 @@ app.post('/api/v1/encrypt', async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🛡️ Cipher REST API running on port ${PORT}`));
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, '0.0.0.0', () => console.log(`🛡️ Cipher REST API running on port ${PORT}`));

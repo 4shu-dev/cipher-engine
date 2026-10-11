@@ -1,18 +1,32 @@
 {
   "name": "cipher-engine",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Multi-layer cryptographic engine, REST API, and Discord bot",
+  "main": "src/api/server.ts",
   "scripts": {
+    "start:api": "tsx src/api/server.ts",
+    "start:bot": "tsx src/bot/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "crypto",
+    "cipher",
+    "discord-bot",
+    "rest-api"
+  ],
+  "author": "4shu",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.27.0",
     "dotenv": "^18.0.7",
     "express": "^5.3.0",
     "pg": "^8.23.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.5",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
   }
 }
